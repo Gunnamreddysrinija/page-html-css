@@ -1,0 +1,119 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background-image {
+    background: url('cloud.jpeg');
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height:350px;
+    width: 300px;
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+    background: linear-gradient(to left, #1E90FF, #FF69B4);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.toggle-buttons button.active {
+    background: linear-gradient(to right, #FF69B4, #1E90FF);
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facebook {
+    background: #3b5998;
+}
+
+.google {
+    background: #db4437;
+}
+
+.twitter {
+    background: #00aced;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form .remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+form .remember-me input {
+    margin-right: 10px;
+}
+
+form button {
+    background: linear-gradient(to right, #1E90FF, #FF69B4);
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(to right, #FF69B4, #1E90FF);
+}
